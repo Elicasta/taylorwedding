@@ -874,7 +874,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: clamp(4.4rem, 17vw, 6rem);
+    font-size: clamp(3.8rem, 14.5vw, 5rem);
   }
 
   .hero-intro {
@@ -889,11 +889,11 @@ footer {
   }
 
   .statement-inner {
-    padding-block: 4.3rem;
+    padding-block: 3.75rem;
   }
 
   .statement blockquote {
-    font-size: clamp(2.65rem, 10vw, 4.2rem);
+    font-size: clamp(2.15rem, 8vw, 3rem);\n    line-height: 1.02;
   }
 
   .photo-break img {
@@ -926,7 +926,7 @@ footer {
   .investment h2,
   .details-heading h2,
   .finale h2 {
-    font-size: clamp(2.95rem, 11vw, 4.4rem);
+    font-size: clamp(2.55rem, 8.8vw, 3.6rem);
   }
 
   .story-row {
@@ -1046,7 +1046,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: clamp(4rem, 19vw, 5.25rem);
+    font-size: clamp(3.55rem, 16vw, 4.6rem);
   }
 
   .hero-intro {
@@ -1085,7 +1085,7 @@ footer {
   }
 
   .statement blockquote {
-    font-size: clamp(2.45rem, 12vw, 3.6rem);
+    font-size: clamp(2.1rem, 9.2vw, 2.75rem);\n    line-height: 1.03;
   }
 
   .photo-break {
@@ -1105,7 +1105,7 @@ footer {
   .investment-grid,
   .details-section,
   .finale-grid {
-    padding-block: 4.2rem;
+    padding-block: 3.7rem;
   }
 
   .section-heading h2,
@@ -1113,7 +1113,7 @@ footer {
   .plan-content h2,
   .details-heading h2,
   .finale h2 {
-    font-size: clamp(2.75rem, 13vw, 3.75rem);
+    font-size: clamp(2.45rem, 10.5vw, 3.2rem);
   }
 
   .section-heading > p,
