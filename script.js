@@ -1,10 +1,19 @@
-const QUOTE_LINK = "QUOTE_LINK_HERE";
+const QUOTE_LINK = "https://ECCreativeStudio.pixieset.com/quote/qo_fpQpAMfqnOVYGbZPtutpx4BOwn8Q";
 
 document.querySelectorAll(".quote-link").forEach((link) => {
-  if (QUOTE_LINK && QUOTE_LINK !== "QUOTE_LINK_HERE") {
-    link.href = QUOTE_LINK;
-    link.target = "_blank";
-    link.rel = "noopener";
+  link.href = QUOTE_LINK;
+  link.target = "_blank";
+  link.rel = "noopener";
+});
+
+const weddingImages = window.WEDDING_IMAGE_DATA || {};
+
+document.querySelectorAll("[data-wedding-image]").forEach((image) => {
+  const key = image.dataset.weddingImage;
+  const source = weddingImages[key];
+
+  if (source) {
+    image.src = source;
   }
 });
 
@@ -21,7 +30,7 @@ if (reducedMotion) {
         obs.unobserve(entry.target);
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -5% 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px -4% 0px" }
   );
 
   document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
