@@ -55,7 +55,7 @@ a { color: inherit; }
 .skip-link:focus { top: 1rem; }
 
 .shell {
-  width: min(1180px, calc(100% - 48px));
+  width: min(1200px, calc(100% - clamp(36px, 6vw, 88px)));
   margin-inline: auto;
 }
 
@@ -140,12 +140,11 @@ a { color: inherit; }
 }
 
 .hero {
-  min-height: calc(100svh - 118px);
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(360px, .72fr);
-  gap: clamp(3rem, 7vw, 7rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, .68fr);
+  gap: clamp(3.25rem, 7vw, 7rem);
   align-items: center;
-  padding-block: clamp(3.75rem, 7vw, 6.5rem);
+  padding-block: clamp(4.75rem, 7.5vw, 7rem);
 }
 
 .hero-copy {
@@ -240,22 +239,14 @@ a { color: inherit; }
 }
 
 .hero-photo {
-  position: relative;
   justify-self: end;
-  width: min(100%, 470px);
-}
-
-.hero-photo::before {
-  content: "";
-  position: absolute;
-  inset: 18px -18px -18px 18px;
-  border: 1px solid var(--line);
-  z-index: -1;
+  width: min(100%, 485px);
 }
 
 .hero-photo img {
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 43%;
   background: var(--paper-deep);
 }
 
@@ -308,7 +299,7 @@ a { color: inherit; }
 
 .photo-break img {
   width: 100%;
-  height: min(72vw, 760px);
+  height: min(55vw, 700px);
   object-fit: cover;
   object-position: center 48%;
 }
@@ -327,7 +318,7 @@ a { color: inherit; }
 }
 
 .section {
-  padding-block: clamp(5.25rem, 9vw, 8rem);
+  padding-block: clamp(5rem, 8vw, 7.5rem);
 }
 
 .section-heading {
@@ -398,7 +389,7 @@ a { color: inherit; }
   display: grid;
   grid-template-columns: minmax(0, .95fr) minmax(0, .85fr);
   gap: clamp(3rem, 9vw, 8rem);
-  padding-block: clamp(5.5rem, 9vw, 8.5rem);
+  padding-block: clamp(5.25rem, 8.5vw, 8rem);
 }
 
 .weekend .eyebrow { color: #cad8de; }
@@ -453,11 +444,11 @@ a { color: inherit; }
   grid-template-columns: minmax(300px, .78fr) minmax(0, 1.05fr);
   gap: clamp(3.5rem, 8vw, 7rem);
   align-items: center;
-  padding-block: clamp(5.5rem, 10vw, 9rem);
+  padding-block: clamp(5.25rem, 9vw, 8.25rem);
 }
 
 .plan-note {
-  min-height: 430px;
+  min-height: 390px;
   padding: clamp(1.75rem, 3.5vw, 3rem);
   background: var(--blue-soft);
   display: flex;
@@ -522,7 +513,7 @@ a { color: inherit; }
 }
 
 .included {
-  padding-block: clamp(5.25rem, 9vw, 8rem);
+  padding-block: clamp(5rem, 8vw, 7.5rem);
   background: var(--paper-deep);
 }
 
@@ -539,7 +530,7 @@ a { color: inherit; }
 }
 
 .included-card {
-  min-height: 300px;
+  min-height: 280px;
   padding: 1.8rem;
   background: var(--paper);
   display: flex;
@@ -574,7 +565,7 @@ a { color: inherit; }
   display: grid;
   grid-template-columns: minmax(290px, .75fr) minmax(0, 1.15fr);
   gap: clamp(3rem, 9vw, 8rem);
-  padding-block: clamp(5.5rem, 10vw, 9rem);
+  padding-block: clamp(5.25rem, 9vw, 8.25rem);
 }
 
 .investment .eyebrow { color: #b9cbd3; }
@@ -634,7 +625,7 @@ a { color: inherit; }
   display: grid;
   grid-template-columns: minmax(0, .85fr) minmax(0, 1fr);
   gap: clamp(3rem, 9vw, 8rem);
-  padding-block: clamp(5.25rem, 9vw, 8rem);
+  padding-block: clamp(5rem, 8vw, 7.5rem);
 }
 
 .details-heading {
@@ -893,13 +884,8 @@ footer {
 
   .hero-photo {
     justify-self: start;
-    width: min(88%, 460px);
-    margin-left: auto;
-    margin-right: 12px;
-  }
-
-  .hero-photo::before {
-    inset: 12px -12px -12px 12px;
+    width: min(100%, 480px);
+    margin: 0;
   }
 
   .statement-inner {
@@ -911,9 +897,9 @@ footer {
   }
 
   .photo-break img {
-    height: 68vw;
-    min-height: 390px;
-    max-height: 620px;
+    height: 62vw;
+    min-height: 360px;
+    max-height: 600px;
   }
 
   .photo-break-caption {
@@ -1094,8 +1080,8 @@ footer {
   }
 
   .hero-photo {
-    width: calc(100% - 10px);
-    margin-right: 10px;
+    width: 100%;
+    margin: 0;
   }
 
   .statement blockquote {
@@ -1107,8 +1093,8 @@ footer {
   }
 
   .photo-break img {
-    min-height: 360px;
-    height: 92vw;
+    min-height: 340px;
+    height: 82vw;
     object-position: 58% center;
   }
 
