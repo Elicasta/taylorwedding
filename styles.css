@@ -456,15 +456,34 @@ a { color: inherit; }
   padding-block: clamp(5.5rem, 10vw, 9rem);
 }
 
-.plan-photo {
-  width: min(100%, 500px);
+.plan-note {
+  min-height: 430px;
+  padding: clamp(1.75rem, 3.5vw, 3rem);
+  background: var(--blue-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.plan-photo img {
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-  object-position: center center;
-  background: var(--paper-deep);
+.plan-note > span {
+  color: var(--blue-dark);
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.plan-note > p {
+  margin: auto 0;
+  font: 500 clamp(2rem, 3.4vw, 3.2rem)/1.08 var(--serif);
+  letter-spacing: -.025em;
+}
+
+.plan-note > small {
+  max-width: 350px;
+  color: var(--muted);
+  font-size: .72rem;
+  line-height: 1.6;
 }
 
 .plan-content h2 {
@@ -953,12 +972,8 @@ footer {
     padding-block: 4.8rem;
   }
 
-  .plan-photo {
-    width: min(88%, 460px);
-  }
-
-  .plan-photo figcaption {
-    max-width: 330px;
+  .plan-note {
+    min-height: 330px;
   }
 
   .plan-intro {
@@ -1131,7 +1146,15 @@ footer {
     text-align: center;
   }
 
-  .plan-photo,
+  .plan-note {
+    min-height: 300px;
+    padding: 1.5rem;
+  }
+
+  .plan-note > p {
+    font-size: 2rem;
+  }
+
   .finale-photo {
     width: 100%;
     margin: 0;
