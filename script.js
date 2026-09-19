@@ -6,17 +6,6 @@ document.querySelectorAll(".quote-link").forEach((link) => {
   link.rel = "noopener";
 });
 
-const weddingImages = window.WEDDING_IMAGE_DATA || {};
-
-document.querySelectorAll("[data-wedding-image]").forEach((image) => {
-  const key = image.dataset.weddingImage;
-  const source = weddingImages[key];
-
-  if (source) {
-    image.src = source;
-  }
-});
-
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (reducedMotion) {
